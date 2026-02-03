@@ -81,7 +81,7 @@ export default function Home() {
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" className="btn-luxury border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" className="btn-luxury border-white text-primary hover:bg-white hover:text-primary">
               <Link to="/contact">
                 Book Consultation
               </Link>

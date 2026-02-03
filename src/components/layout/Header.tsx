@@ -43,13 +43,13 @@ export function Header() {
           <Link to="/" className="flex flex-col">
             <span className={cn(
               'font-serif text-2xl md:text-3xl font-semibold tracking-tight transition-colors duration-300',
-              isScrolled ? 'text-primary' : 'text-white'
+              isScrolled ? 'text-primary' : 'text-primary'
             )}>
               Prime Realty
             </span>
             <span className={cn(
               'text-xs uppercase tracking-luxury transition-colors duration-300',
-              isScrolled ? 'text-muted-foreground' : 'text-white/70'
+              isScrolled ? 'text-muted-foreground' : 'text-primary/70'
             )}>
               Lahore
             </span>
@@ -64,8 +64,8 @@ export function Header() {
                 className={cn(
                   'text-sm uppercase tracking-widest font-medium link-underline transition-colors duration-300',
                   location.pathname === link.href
-                    ? isScrolled ? 'text-primary' : 'text-white'
-                    : isScrolled ? 'text-muted-foreground hover:text-primary' : 'text-white/80 hover:text-white'
+                    ? isScrolled ? 'text-primary' : 'text-primary'
+                    : isScrolled ? 'text-muted-foreground hover:text-primary' : 'text-primary/80 hover:text-primary'
                 )}
               >
                 {link.label}
@@ -79,7 +79,7 @@ export function Header() {
               href="tel:+923001234567"
               className={cn(
                 'flex items-center gap-2 text-sm transition-colors duration-300',
-                isScrolled ? 'text-primary' : 'text-white'
+                isScrolled ? 'text-primary' : 'text-primary'
               )}
             >
               <Phone className="w-4 h-4" />
@@ -92,7 +92,7 @@ export function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={cn(
               'md:hidden p-2 transition-colors duration-300',
-              isScrolled ? 'text-primary' : 'text-white'
+              isScrolled ? 'text-primary' : 'text-primary'
             )}
             aria-label="Toggle menu"
           >
@@ -119,8 +119,8 @@ export function Header() {
                   className={cn(
                     'text-lg font-medium py-2 transition-colors duration-300',
                     location.pathname === link.href
-                      ? isScrolled ? 'text-primary' : 'text-white'
-                      : isScrolled ? 'text-muted-foreground' : 'text-white/80'
+                      ? isScrolled ? 'text-primary' : 'text-primary'
+                      : isScrolled ? 'text-muted-foreground' : 'text-primary/80'
                   )}
                 >
                   {link.label}
@@ -130,7 +130,7 @@ export function Header() {
                 href="tel:+923001234567"
                 className={cn(
                   'flex items-center gap-2 py-2 mt-2 pt-4 border-t',
-                  isScrolled ? 'text-primary border-border' : 'text-white border-white/20'
+                  isScrolled ? 'text-primary border-border' : 'text-primary border-white/20'
                 )}
               >
                 <Phone className="w-5 h-5" />
